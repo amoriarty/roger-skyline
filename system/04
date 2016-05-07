@@ -1,1 +1,2 @@
-time
+#!/bin/sh
+uptime
