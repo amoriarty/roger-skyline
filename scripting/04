@@ -1,0 +1,5 @@
+#!/bin/bash
+if [ -n "$(md5sum /etc/crontab | diff /var/log/cronsum -)" ]
+then echo "Crontab has been modified" | mail -s "Server Log" root@127.0.0.1 && echo $(md5sum /etc/crontab) > /var/log/cronsum
+else echo "No difference"
+fi
