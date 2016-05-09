@@ -1,0 +1,9 @@
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled)
+   Active: active (running) since lun. 2016-05-09 15:29:20 CEST; 1min 54s ago
+ Main PID: 474 (sshd)
+   CGroup: /system.slice/ssh.service
+           └─474 /usr/sbin/sshd -D
+
+mai 09 15:29:21 roger-skyline sshd[474]: Server listening on 0.0.0.0 port 22.
+mai 09 15:29:21 roger-skyline sshd[474]: Server listening on :: port 22.
